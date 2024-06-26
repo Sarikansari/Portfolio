@@ -1,0 +1,747 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+#header nav p {
+    font-size: 50px;
+    font-weight: 600;
+    padding-left: 10%;
+}
+
+#header .container {
+    z-index: 99;
+}
+
+#header nav p span {
+    color: #00ace5;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: rgb(61,60,60);
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color: #00ace5;
+    border-radius: 10px;
+}
+
+body {
+    background: black;
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./image/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 10px 10%;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+}
+
+.logo {
+    width: 140px;
+}
+nav li .active {
+    color: #00ace5;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00ace5;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover {
+    color: #00ace5;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul {
+    padding-right: 10%;
+}
+
+.header-text {
+    margin-top: 15%;
+    font-size: 30px;
+    margin-left: 10%;
+    width: px;
+} 
+
+.header-text h1 {
+    font-size: 28px;
+    margin-top: 20px;
+    padding: 0%;
+
+}
+
+.name {
+    font-size: 100px;
+    font-family: fantasy;
+    font-weight: 500;
+}
+
+.header-text br {
+    padding: 0px;
+}
+
+.bio {
+    font-size: 20px;
+}
+
+.header-text span {
+    color: #00ace5;
+}
+
+/* ----------about---------- */
+#about {
+    padding: 80px 0;
+    color: #ababab;
+}
+
+#about span{
+    color: #00ace5;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #00ace5;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+    width: 50%;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.tab-contents ul li span {
+    color: #b54769;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+/* ---------- Services--------- */
+#services {
+    padding: 30px 0;
+}
+
+#services span {
+    color: #00ace5;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.services-list div {
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 10px;
+    /* transition: background 0.5s, transform 0.5s; */
+}
+
+.services-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.services-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.services-list div a {
+    /* text-decoration: none; */
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+.services-list div:hover {
+    background: #00ace5;
+    transform: translateY(-10px);
+    transition: background 0.5s, transform 0.5s;
+}
+/* ----------My Projects----------- */
+
+#projects {
+    padding: 50px 0;
+}
+
+#projects span {
+    color: #00ace5;
+}
+
+.work-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));   
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.work {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+.layer {
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #00ace5);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    /* transition: height 0.5s; */
+}
+
+.layer h3 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.layer a {
+    margin-top: 20px;
+    color: #00ace5;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.work:hover img {
+    transform: scale(1.1);
+    transition: transform 0.5s;
+}
+
+.work:hover .layer {
+    height: 100%;
+    transition: height 0.5s;
+}
+
+.btn {
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #00ace5;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn:hover {
+    background: #00ace5;
+    transition: background 0.5s;
+}
+
+/* -----------Contact me------------ */
+.contact-left {
+    flex-basis: 35%;
+}
+
+.contact-right {
+    flex-basis: 60%;
+}
+
+.contact-left p {
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: #00ace5;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-top: 15px;
+    margin-right:5px;
+    color: #ababab;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: #00ace5;
+    transition: transform 0.5s;
+    transform: translateY(-5px);
+}
+
+.CV {
+    text-decoration: none;
+    /* display: block; */
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #00ace5;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: white;
+    background: #00ace5;
+    display: inline-block;
+}
+
+form .btn3 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    margin-left: 15px;
+    color: white;
+    background: #00ace5;
+    border: 1px solid #00ace5;
+}
+
+.contact-right form {
+    width: 100%;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #252626;
+    padding: 15px;
+    margin: 15px;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    background: #262626;
+    padding: 25px 0px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* --------------CSS for small screen--------------- */
+/* for hide the menu bar in desktop size and visible in small screen */
+nav .fa-solid{
+    display: none;
+}
+
+/* ------ My skills -------- */
+.box {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#progress span {
+    color: #00ace5;
+}
+
+.program h2 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.progress-bar {
+    background: #959595;
+    width: 600px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 0%;
+}
+
+.progress-bar div span {
+    float: right;
+    margin-top: -10px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    /* transition: width 0.5s linear; */
+}
+
+.html {
+    background: #00ace5;
+    animation: html 3s alternate ease-in infinite;
+}
+.css {
+    background: #00ace5;
+    animation: css 3s alternate ease-in infinite;
+}
+.javascript {
+    background: #00ace5;
+    animation: javascript 3s alternate ease-in infinite;
+}
+.c {
+    background: #00ace5;
+    animation: c 3s alternate ease-in infinite;
+}
+.bootstrap {
+    background: #00ace5;
+    animation: bootstrap 3s alternate ease-in infinite;
+}
+
+
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+
+    50%{
+        width: 86%;
+    }
+    
+    100% {
+        width: 86%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 80%;
+    }
+    100% {
+        width: 80%;
+    }
+}
+@keyframes javascript {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 85%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+@keyframes c {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 75%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+@keyframes bootstrap {
+    0%{
+        width: 0%;
+    }
+    50%{
+        width: 70%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+.program {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px), (max-width: 1024px) {
+    nav ul li {
+        margin: 5px 10px;
+    }
+    nav ul {
+        padding-right: 5%;
+    }
+    #header nav p {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 601px), (max-width: 757px) {
+    #header nav p {
+        padding-left: 0%;
+    }
+    #header nav ul li {
+        margin: 5px 8px;
+    }
+    #header nav ul {
+        padding-right: 0%;
+    }
+    #header nav li a{
+        font-size: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(./image/phnimg.jpg);
+    }
+    #header .container {
+        z-index: 50;
+    }
+    #header .header-text{
+        margin-top: 65%;
+    }
+    .header-text  h1{
+        font-size: 16px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+
+    .bio {
+        font-size: 13px;
+        width: 200px;
+    }
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        padding-right: 15px;
+    }
+    #header nav ul{
+        background: rgba(0, 172, 229, 0.402);
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        z-index: 2;
+        padding-top: 50px;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+        padding-bottom: 10px;
+    }
+
+    #header nav ul li a {
+        margin-left: 30%;
+        font-size: 20px;
+    }
+
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    /* ---------About Me ----------- */
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    /* ---------Contact-------- */
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+    /* --------- my skills ---------- */
+    .program {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    #progress h2 {
+        text-align: left;
+    }
+
+    .progress-bar {
+        width: 300px;
+    }
+}
+
+#msg{
+    color: #61b752;
+    margin-top: 5px;
+    margin-left: 15px;
+    display: block;
+}
+
+#contact span {
+    color: #00ace5;
+}
+
+span#msg{
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+}

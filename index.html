@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="short-cut icon" href="./image/weblogo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/dad4d0f776.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <p><span>P</span>ortfolio.</p>
+          <ul id="sidemenu">
+            <li><a class="active" href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#progress">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <div class="header-text">
+        <h1>Hi there👋, I'm</h1>
+        <p class="name"><span>Sarik</span> <br />Ansari</p>
+        <p class="bio">
+          A young <span>Web Developer</span> with a passion for mobile & web
+          development.
+        </p>
+      </div>
+    </div>
+    <!-- --------------about--------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./image/weblogo.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About <span>Me</span></h1>
+            <p>
+              Hello there! I'm thrilled to welcome you to my portfolio.Dedicated
+              web developer about to graduate with a degree from M.D University.
+              I spent my university years diving deep into the world of web
+              development, with a versatile set of skills and a keen interest in
+              creating digital solutions.My journey in web development has been
+              an interesting exploration of coding languages, design principles,
+              and problem solving. Expert in HTML, CSS, JavaScript, and
+              programming, I embraced the challenge of turning ideas into
+              beautifully designed and user-friendly websites.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <!-- --------------Skills--------------- -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web App Development.</li>
+                <li>
+                  <span>Communication Skill</span><br />Proficient in group
+                  communication and engagement.
+                </li>
+                <li>
+                  <span>Microsoft Office</span><br />Proficient in Microsoft
+                  Office Suite.
+                </li>
+                <li>
+                  <span>Personality Development</span><br />I possess
+                  commendable attributes of personality development.
+                </li>
+                <!-- <li><span>App development</span><br>Building Android/iOS apps</li> -->
+              </ul>
+            </div>
+            <!-- --------------Experience--------------- -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - 2023</span><br />Sole Proprietorship(E-Commerce).
+                </li>
+              </ul>
+            </div>
+            <!-- --------------Education--------------- -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024 - Current</span><br />BCA in M.D
+                  University(Ongoing).
+                </li>
+                <li>
+                  <span>2024 - Current</span><br />Growth mindset approach
+                  course from Freedom Employability Academy(Ongoing).
+                </li>
+                <li>
+                  <span>2021 - 2022</span><br />Completed SSC course curriculum
+                  in domestic data entry operator from N.S.D.C.
+                </li>
+                <li>
+                  <span>2020</span><br />Completed CBSE Senior School
+                  Examination.
+                </li>
+                <li>
+                  <span>2018</span><br />Completed CBSE Secondary School
+                  Examination.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------Services--------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My <span>Services</span></h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Developer</h2>
+            <p>
+              As a developer, I find myself most capativated by the power and
+              flexibility of Node.js. I'm always eager to dive into new projects
+              that leverage Node.js and discover innovative ways to create fast,
+              scalable, and user-friendly applications.
+            </p>
+            <a href="#" target="_blank">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2>UI/UX Designing</h2>
+            <p>
+              Crafting visually appealing and intuitive user interfaces that
+              offer a delightful user experience is something I'm truly fanatic
+              about.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Development</h2>
+            <p>
+              With a focus on user-centric design and cutting-edge technologies,
+              I thrive on building intuitive and efficient apps that make a
+              positive impact on people's lives. Let's turn ideas into reality
+              and shape the future together.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------My skills---------- -->
+    <div id="progress">
+      <div class="box">
+        <div class="program">
+          My <span>Skills</span>
+          <h2>HTML</h2>
+          <div class="progress-bar">
+            <div class="html"><span></span></div>
+          </div>
+
+          <h2>CSS</h2>
+          <div class="progress-bar">
+            <div class="css"><span></span></div>
+          </div>
+
+          <h2>JavaScript</h2>
+          <div class="progress-bar">
+            <div class="javascript"><span></span></div>
+          </div>
+
+          <h2>C</h2>
+          <div class="progress-bar">
+            <div class="c"><span></span></div>
+          </div>
+
+          <h2>Bootstrap</h2>
+          <div class="progress-bar">
+            <div class="bootstrap"><span></span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------My projects--------------- -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Latest <span>Projects</span></h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./image/netflix.png" alt="" />
+            <div class="layer">
+              <h3>Netflix Clone</h3>
+              <p>
+                This Netflix is a streaming service that offers a wide variety
+                of award-winning TV shows, movies, anime, documentaries and more
+                – on thousands of internet-connected devices.
+              </p>
+              <a
+                href="https://codepen.io/Sarik-Ansari/full/BabgPjj"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./image/Play has no limits..jpg" alt="" />
+            <div class="layer">
+              <h3>Zip Demons</h3>
+              <p>
+                We develop cutting-edge games and cross-platform game engine
+                technology!
+              </p>
+              <a href="https://sarikansari.github.io/zip_demon/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./image/profilecard.png" alt="" />
+            <div class="layer">
+              <h3>Profile Card</h3>
+              <p>It's just a card that represents mine social networks.</p>
+              <a href="https://sarik-3975.github.io/Calculator/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- --------------contact--------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1>Contact <span>Me</span></h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>ansarisarik748@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>8527 285 720</p>
+            <p>
+              <i class="fa-sharp fa-solid fa-location-dot"></i>Badarpur, Delhi
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/sarik.ansari.3975"
+                target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sarik-ansari-9679a7240"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/sarik-3975" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://instagram.com/sarik.ansari.3975?igshid=ZDc4ODBmNjlmNQ=="
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="./image/CV.pdf" target="_blank" download class="CV cv2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn3">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>All copyrights © reserved 2023, Sarik Ansari's Website</p>
+      </div>
+    </div>
+  </body>
+</html>
