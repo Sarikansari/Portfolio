@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="short-cut icon" href="./image/weblogo.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/dad4d0f776.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <p><span>P</span>ortfolio.</p>
+          <ul id="sidemenu">
+            <li><a class="active" href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#progress">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+      <div class="header-text">
+        <h1>Hi there👋, I'm</h1>
+        <p class="name"><span>Sarik</span> <br />Ansari</p>
+        <p class="bio">
+          A motivated <span>Cloud Engineer</span> passionate about building scalable cloud solutions for innovation.
+        </p>
+      </div>
+    </div>
+    <!-- --------------about--------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./image/weblogo.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About <span>Me</span></h1>
+            <p>
+              Hello there! I'm excited to welcome you to my portfolio. I'm a dedicated Cloud Engineer with a Bachelor's degree in Computer Applications from M.D University. Throughout my university years, I immersed myself in the world of cloud computing, developing a diverse set of skills and a strong passion for designing and optimizing scalable cloud solutions. My journey in cloud engineering has been an exploration of cloud architecture, deployment strategies, and performance optimization. Proficient in platforms like AWS, Azure, Docker, and Kubernetes, I thrive on the challenge of building secure, efficient, and innovative cloud infrastructures.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <!-- --------------Skills--------------- -->
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <!-- <li> -->
+                  
+                <li>
+                  <span>RedHat Linux</span><br />Red Hat Linux administration, troubleshooting, and system configuration knowledge.
+                <li>
+
+                
+
+                <li>
+                  <span>Operating Systems</span><br />Familiar with Windows, Linux, and MacOS administration and troubleshooting.
+                </li>
+
+                <li>
+                  <span>Networking</span><br />Network configuration, troubleshooting, protocols, and security fundamentals proficiency.
+                </li>
+
+                <li>
+                  <span>Microsoft Office</span><br />Proficient in MS Word, Excel, PowerPoint, and Outlook.
+                </li>
+
+                <li>
+                  <span>Nagios</span><br />Proficient in Nagios for monitoring IT infrastructure, ensuring system reliability and performance.
+                <li>
+
+                </li>
+                  <span>Zoho</span><br />Zoho CRM, Zoho Creator, automation, customization, and workflow management.
+                </li>
+
+                </li>
+              </ul>
+            </div>
+
+            <!-- --------------Experience--------------- -->
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022 - 2023</span><br />Sole Proprietorship(E-Commerce).
+                </li>
+              </ul>
+            </div>
+            <!-- --------------Education--------------- -->
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2024 - Ongoing</span><br />Master in Cloud Computing from Jetking.
+                </li>
+                <li>
+                  <span>2021 - 2024</span><br />Bachelor of Computer Applications from Maharshi Dayanand
+                  University.
+                </li>
+                <li>
+                  <span>2023 - 2024</span><br />Personality Development from Freedom Employability Academy.
+                </li>
+                <li>
+                  <span>2021 - 2022</span><br />Completed SSC course curriculum
+                  in domestic data entry operator from Sofcon Training.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------Services--------------- -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My <span>Services</span></h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-cloud"></i>
+            <h2>Cloud Engineer</h2>
+            <p>
+              I am passionate about designing, securing, and maintaining cloud-based infrastructure and applications. I specialize in optimizing cloud environments for performance, scalability, and security. With expertise in deployment, automation, and monitoring, I ensure seamless cloud operations. My focus is on implementing best practices to enhance reliability and efficiency in cloud solutions.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Front-End Developer</h2>
+            <p>
+              As a developer, I find myself most capativated by the power and
+              flexibility of HTML, CSS and JavaScript. I'm always eager to dive into new projects
+              that leverage projects and discover innovative ways to create fast,
+              scalable, and user-friendly websites.
+            </p>
+            <a href="#" target="_blank">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-chart-column"></i>
+            <h2>Data Analytics</h2>
+            <p>
+              I specialize in transforming raw data into actionable insights. With a keen eye for patterns and a passion for problem-solving, I build robust analytical models and visualizations that drive informed decision-making. Let's uncover hidden opportunities and create measurable impact together.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------My skills---------- -->
+    <div id="progress">
+      <div class="box">
+        <div class="program">
+          My <span>Skills</span>
+          <h2>Python</h2>
+          <div class="progress-bar">
+            <div class="bootstrap"><span></span></div>
+          </div>
+          
+          <h2>AWS</h2>
+          <div class="progress-bar">
+            <div class="html"><span></span></div>
+          </div>
+
+          <h2>CCNA</h2>
+          <div class="progress-bar">
+            <div class="css"><span></span></div>
+          </div>
+
+          <!-- <h2>JavaScript</h2>
+          <div class="progress-bar">
+            <div class="javascript"><span></span></div>
+          </div> -->
+
+          <h2>Server</h2>
+          <div class="progress-bar">
+            <div class="c"><span></span></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------My projects--------------- -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Latest <span>Projects</span></h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="./image/topology.jpg" alt="" />
+            <div class="layer">
+              <h3>Network-Routings</h3>
+              <p>
+                In my project, I designed and implemented various network routing protocols, including EIGRP, OSPF, RIP, and Static Routing, to optimize data flow and enhance network efficiency. I also configured Static and Dynamic NAT, as well as PAT, to improve security and enable effective IP address management. Through careful troubleshooting and performance tuning, I ensured seamless connectivity, reduced latency, and maintained high network availability. Use this project on Cisco-Packet Tracer.
+              </p>
+              <a
+                href="https://github.com/Sarikansari/CCNA-routings/tree/6ce7636b0e4306eb0a99a5149ec1a22ff5c30bf3/CCNA%20personal%20notes"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./image/Play has no limit.jpg" alt="" />
+            <div class="layer">
+              <h3>Zip Demons</h3>
+              <p>
+                Developed cutting-edge games and cross-platform game engine.
+                technology!
+              </p>
+              <a href="https://sarikansari.github.io/zip_demon/" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./image/Dashboard.jpg" alt="" />
+            <div class="layer">
+              <h3>Dashboard Sales</h3>
+              <p>Developed a dynamic and visually intuitive dashboard to analyze and visualize key business metrics. Integrated data from multiple sources using Excel and transformed it using Power BI’s DAX and Power Query.</p>
+              <a href="./image/Ecommerce Sale.pbix" target="_blank" download=""
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- --------------contact--------------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1>Contact <span>Me</span></h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>ansarisarik748@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>8527 285 720</p>
+            <p>
+              <i class="fa-sharp fa-solid fa-location-dot"></i>Badarpur, Delhi
+            </p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/sarik.ansari.3975"
+                target="_blank"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/sarik-ansari-9679a7240"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/Sarikansari" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://instagram.com/sarik.ansari.3975?igshid=ZDc4ODBmNjlmNQ=="
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+            <a href="./image/CV.pdf" target="_blank" download class="CV cv2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn3">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>All copyrights © reserved 2023, Sarik Ansari's Website</p>
+      </div>
+    </div>
+  </body>
+</html>
