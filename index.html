@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="short-cut icon" href="./image/weblogo.jpg" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <script src="https://kit.fontawesome.com/dad4d0f776.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <div id="header">
+    <div class="pf-bg"></div>
+    <div class="pf-grid"></div>
+    <nav>
+      <div class="logo-text"><span>P</span>ortfolio.</div>
+      <ul id="sidemenu">
+        <li><a class="active" href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#progress">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <div class="badge"><span class="badge-dot"></span>Available for work</div>
+      <p class="greeting">Hi there, I'm</p>
+      <p class="name"><span>Sarik</span><br />Ansari</p>
+      <p class="bio">A motivated <strong>Cloud &amp; DevOps Engineer</strong> passionate about building scalable
+        infrastructure and automating cloud solutions.</p>
+      <div class="cta-buttons">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="./image/Sarik CV.pdf" class="btn-outline" download>Download CV</a>
+      </div>
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-num">1<span>+</span></div>
+          <div class="stat-lbl">Year experience</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">10<span>+</span></div>
+          <div class="stat-lbl">Projects done</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5<span>+</span></div>
+          <div class="stat-lbl">Tech stacks</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ABOUT ========== -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <div class="img-wrap">
+            <img src="./image/weblogo.jpg" alt="Sarik Ansari" />
+            <div class="img-border"></div>
+            <div class="img-dot"></div>
+          </div>
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About <span>Me</span></h1>
+          <p class="about-bio">
+            I'm a <strong>Cloud &amp; DevOps Engineer</strong> with hands-on experience in infrastructure monitoring,
+            remote desktop administration, and cloud deployments. Currently working at <strong>Mieux
+              Technologies</strong> and pursuing an MCA from Maharshi Dayanand University. I enjoy automating systems
+            and building reliable infrastructure using tools like AWS, Docker, Kubernetes, and Linux.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+            <p class="tab-links" onclick="opentab('certifications')">Certifications</p>
+          </div>
+
+          <!-- SKILLS -->
+          <div class="tab-contents active-tab" id="skills">
+            <div class="skill-icon-grid">
+
+              <div class="skill-icon-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+                <span>Linux</span>
+              </div>
+
+              <div class="skill-icon-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                <span>Python</span>
+              </div>
+
+              <div class="skill-icon-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" />
+                <span>Docker</span>
+              </div>
+
+              <div class="skill-icon-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+                  alt="Kubernetes" />
+                <span>Kubernetes</span>
+              </div>
+
+              <div class="skill-icon-card">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+                  alt="AWS" style="width:54px;height:44px;" />
+                <span>AWS</span>
+              </div>
+
+              <div class="skill-icon-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"
+                  alt="Terraform" />
+                <span>Terraform</span>
+              </div>
+
+              <div class="skill-icon-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg"
+                  alt="Ansible" />
+                <span>Ansible</span>
+              </div>
+
+              <div class="skill-icon-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+                  alt="Jenkins" />
+                <span>Jenkins</span>
+              </div>
+
+              <div class="skill-icon-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                <span>Git</span>
+              </div>
+
+              <div class="skill-icon-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+                  style="filter:invert(1);" />
+                <span>GitHub</span>
+              </div>
+
+              <div class="skill-icon-card">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab" />
+                <span>GitLab</span>
+              </div>
+
+              <div class="skill-icon-card">
+                <svg viewBox="0 0 44 20" style="width:54px;height:44px;" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="1" y="1" width="42" height="18" rx="3" fill="#D40000" />
+                  <text x="22" y="14" text-anchor="middle" font-family="Arial Black,sans-serif" font-weight="900"
+                    font-size="11" fill="white" letter-spacing="1">ZABBIX</text>
+                </svg>
+                <span>Zabbix</span>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- EXPERIENCE -->
+          <div class="tab-contents" id="experience">
+            <div class="exp-card">
+              <h3>Mieux Technologies Pvt. Ltd.</h3>
+              <p class="exp-role">Cloud Engineer</p>
+              <p class="exp-period">March 2025 – Present &nbsp;·&nbsp; New Delhi, India</p>
+              <ul>
+                <li>Monitored server and service alerts using Zabbix, ensuring rapid identification and resolution of
+                  infrastructure issues to minimize downtime.</li>
+                <li>Created and configured custom triggers to proactively detect anomalies and notify teams before
+                  issues escalated.</li>
+                <li>Onboarded new hosts and devices to Zabbix, expanding infrastructure visibility across the
+                  environment.</li>
+                <li>Administered user access and permissions within TS Plus, maintaining proper access controls and
+                  security compliance.</li>
+                <li>Published and maintained applications via TS Plus, enabling seamless remote software delivery to end
+                  users.</li>
+                <li>Troubleshot remote user connectivity issues, diagnosing session failures and restoring access with
+                  minimal disruption.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- EDUCATION -->
+          <div class="tab-contents" id="education">
+            <ul class="edu-list">
+              <li>
+                <span>2025 – Present</span><br />
+                Master of Computer Applications (MCA)<br />
+                <small>Maharshi Dayanand University, Rohtak, Haryana</small>
+              </li>
+              <li>
+                <span>2021 – 2024</span><br />
+                Bachelor of Computer Applications (BCA)<br />
+                <small>Maharshi Dayanand University, Rohtak, Haryana</small>
+              </li>
+              <li>
+                <span>Graduated 2020</span><br />
+                Class XII – Commerce (73%)<br />
+                <small>KKC Quetta D.A.V Sr. Sec. School · CBSE</small>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CERTIFICATIONS -->
+          <div class="tab-contents" id="certifications">
+            <div class="cert-grid">
+              <div class="cert-card">
+                <p class="cert-badge">Cloud</p>
+                <p class="cert-title">Master's in Cloud Computing</p>
+                <a href="https://drive.google.com/file/d/1yhXYmVW-maabog277BRaorxl53refg3l/view" target="_blank">View
+                  Certificate ↗</a>
+              </div>
+              <div class="cert-card">
+                <p class="cert-badge">Oracle</p>
+                <p class="cert-title">OCI 2025 Certified DevOps Professional</p>
+                <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=343BFFD87F0B7A6F342B95639C03C2B3C6EC2D591E42CB74E1F25247559988A8"
+                  target="_blank">View Certificate ↗</a>
+              </div>
+              <div class="cert-card">
+                <p class="cert-badge">Microsoft</p>
+                <p class="cert-title">Microsoft Office Specialist Master (MOS)</p>
+                <a href="https://drive.google.com/file/d/1W6_nzHrKTPr2B6OYONXsmjlTiSJG1J3g/view" target="_blank">View
+                  Certificate ↗</a>
+              </div>
+              <div class="cert-card">
+                <p class="cert-badge gold">1st Place</p>
+                <p class="cert-title">AICTE Hackathon – First Position</p>
+                <a href="https://drive.google.com/file/d/1aMehjbz4Y7vQ43G9Meo_xSwX-cTSLR9h/view" target="_blank">View
+                  Certificate ↗</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tab switcher
+    function opentab(tabname) {
+      var contents = document.querySelectorAll('.tab-contents');
+      var links = document.querySelectorAll('.tab-links');
+      contents.forEach(function (c) { c.classList.remove('active-tab'); });
+      links.forEach(function (l) { l.classList.remove('active-link'); });
+      document.getElementById(tabname).classList.add('active-tab');
+      event.currentTarget.classList.add('active-link');
+    }
+
+    // Mobile menu
+    function openmenu() {
+      document.getElementById('sidemenu').style.right = '0';
+    }
+    function closemenu() {
+      document.getElementById('sidemenu').style.right = '-200px';
+    }
+  </script>
+
+  <!-- ========== SERVICES ========== -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My <span>Services</span></h1>
+      <p class="services-sub">Here's what I bring to the table — from cloud infrastructure to monitoring and automation.
+      </p>
+
+      <div class="services-list">
+
+        <div class="sv-card">
+          <span class="sv-tag">Primary</span>
+          <div class="sv-icon-wrap">
+            <i class="fa-solid fa-cloud"></i>
+          </div>
+          <h2>Cloud Infrastructure</h2>
+          <p>Designing and managing scalable cloud environments on AWS. Covers EC2, S3, IAM, VPC, EKS, ECS,
+            CloudFormation, and cost-optimized architecture for production workloads.</p>
+          <a href="#">Learn more &rarr;</a>
+        </div>
+
+        <div class="sv-card">
+          <div class="sv-icon-wrap">
+            <i class="fa-solid fa-gears"></i>
+          </div>
+          <h2>DevOps & Automation</h2>
+          <p>Building CI/CD pipelines with Jenkins and GitHub Actions. Automating infrastructure provisioning using
+            Terraform and Ansible to reduce manual effort and deployment risk.</p>
+          <a href="#">Learn more &rarr;</a>
+        </div>
+
+        <div class="sv-card">
+          <div class="sv-icon-wrap">
+            <i class="fa-solid fa-cubes"></i>
+          </div>
+          <h2>Containerization</h2>
+          <p>Containerizing applications using Docker and orchestrating workloads with Kubernetes. Handles cluster
+            setup, pod management, persistent volumes, and container networking.</p>
+          <a href="#">Learn more &rarr;</a>
+        </div>
+
+        <div class="sv-card">
+          <div class="sv-icon-wrap">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h2>Monitoring & Alerting</h2>
+          <p>Setting up Zabbix for real-time infrastructure monitoring, custom triggers, dashboards, and alerting.
+            Detecting anomalies before they become incidents.</p>
+          <a href="#">Learn more &rarr;</a>
+        </div>
+
+        <div class="sv-card">
+          <div class="sv-icon-wrap">
+            <i class="fa-solid fa-desktop"></i>
+          </div>
+          <h2>Remote Desktop Admin</h2>
+          <p>Administering TS Plus environments — managing user access, publishing applications, session management,
+            load balancing, and troubleshooting remote connectivity issues.</p>
+          <a href="#">Learn more &rarr;</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== PROJECT ========== -->
+  <div id="projects">
+    <div class="container">
+
+      <div class="pj-header">
+        <h1 class="sub-title">Latest <span>Projects</span></h1>
+        <div class="pj-filters">
+          <button class="pj-filter active" onclick="filterProjects('all', this)">All</button>
+          <button class="pj-filter" onclick="filterProjects('cloud', this)">Cloud</button>
+          <button class="pj-filter" onclick="filterProjects('network', this)">Network</button>
+          <button class="pj-filter" onclick="filterProjects('data', this)">Data</button>
+          <button class="pj-filter" onclick="filterProjects('web', this)">Web</button>
+        </div>
+      </div>
+
+      <div class="work-list">
+
+        <div class="pj-card" data-cat="network">
+          <div class="pj-img-wrap">
+            <img src="./image/topology.jpg" alt="Network Routings" />
+            <div class="pj-overlay">
+              <a href="https://github.com/Sarikansari/CCNA-routings" target="_blank" class="pj-overlay-btn">View Project
+                ↗</a>
+            </div>
+          </div>
+          <div class="pj-body">
+            <div class="pj-tags">
+              <span class="pj-tag network">Network</span>
+              <span class="pj-tag network">Cisco</span>
+            </div>
+            <h3>Network Routings</h3>
+            <p>Designed and implemented EIGRP, OSPF, RIP and Static Routing protocols. Configured Static & Dynamic NAT
+              and PAT on Cisco Packet Tracer.</p>
+            <div class="pj-footer">
+              <div class="pj-links">
+                <a href="https://github.com/Sarikansari/CCNA-routings" target="_blank" class="pj-icon-btn"
+                  title="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <span class="pj-status">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pj-card" data-cat="web">
+          <div class="pj-img-wrap">
+            <img src="./image/Play has no limit.jpg" alt="Zip Demons" />
+            <div class="pj-overlay">
+              <a href="https://sarikansari.github.io/zip_demon/" target="_blank" class="pj-overlay-btn">View Project
+                ↗</a>
+            </div>
+          </div>
+          <div class="pj-body">
+            <div class="pj-tags">
+              <span class="pj-tag web">Web</span>
+              <span class="pj-tag web">Game</span>
+            </div>
+            <h3>Zip Demons</h3>
+            <p>Cross-platform browser game with custom game engine logic, collision detection, and interactive gameplay
+              built in HTML, CSS & JavaScript.</p>
+            <div class="pj-footer">
+              <div class="pj-links">
+                <a href="https://sarikansari.github.io/zip_demon/" target="_blank" class="pj-icon-btn" title="Live">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+              <span class="pj-status live">Live</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pj-card" data-cat="data">
+          <div class="pj-img-wrap">
+            <img src="./image/Dashboard.jpg" alt="Dashboard Sales" />
+            <div class="pj-overlay">
+              <a href="./image/Ecommerce Sale.pbix" download class="pj-overlay-btn">Download ↓</a>
+            </div>
+          </div>
+          <div class="pj-body">
+            <div class="pj-tags">
+              <span class="pj-tag data">Data</span>
+              <span class="pj-tag data">Power BI</span>
+            </div>
+            <h3>Dashboard Sales</h3>
+            <p>Dynamic e-commerce sales dashboard built in Power BI with multi-source Excel data, DAX formulas, and
+              Power Query for real-time KPI visualization.</p>
+            <div class="pj-footer">
+              <div class="pj-links">
+                <a href="./image/Ecommerce Sale.pbix" download class="pj-icon-btn" title="Download">
+                  <i class="fa-solid fa-download"></i>
+                </a>
+              </div>
+              <span class="pj-status">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="pj-card" data-cat="cloud">
+          <div class="pj-img-wrap" style="background:#0d1a0d;">
+            <div style="width:100%;height:100%;display:flex;align-items:center;justify-content:center;">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#3ecf8e" stroke-width="1.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" />
+                <polyline points="8 21 12 17 16 21" />
+                <line x1="12" y1="17" x2="12" y2="21" />
+                <path d="M7 8h.01M7 12h.01M11 8h6M11 12h4" />
+              </svg>
+            </div>
+            <div class="pj-overlay">
+              <a href="https://github.com/Sarikansari/ram-monitor-script-rhel" target="_blank"
+                class="pj-overlay-btn">View on GitHub ↗</a>
+            </div>
+          </div>
+          <div class="pj-body">
+            <div class="pj-tags">
+              <span class="pj-tag cloud">Linux</span>
+              <span class="pj-tag network">Bash</span>
+              <span class="pj-tag network">RHEL</span>
+            </div>
+            <h3>RAM Monitor Script</h3>
+            <p>A Bash script for RHEL that monitors available RAM and triggers a warning when it falls below a defined
+              threshold. Ideal for cron-based alerts in production environments.</p>
+            <div class="pj-footer">
+              <div class="pj-links">
+                <a href="https://github.com/Sarikansari/ram-monitor-script-rhel" target="_blank" class="pj-icon-btn"
+                  title="GitHub">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </div>
+              <span class="pj-status live">Open Source</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pj-cta-wrap">
+        <a href="#" class="btn">See more projects ↗</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== CONTACT SECTION ========== -->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+
+      <div class="contact-left">
+        <h1 class="sub-title">Contact <span>Me</span></h1>
+        <p class="contact-tagline">Feel free to reach out — I typically respond within 24 hours.</p>
+
+        <div class="contact-details">
+          <a href="mailto:ansarisarik748@gmail.com" class="cd-item">
+            <div class="cd-icon"><i class="fa-solid fa-envelope"></i></div>
+            <span>ansarisarik748@gmail.com</span>
+          </a>
+          <a href="tel:+918527285720" class="cd-item">
+            <div class="cd-icon"><i class="fa-solid fa-phone"></i></div>
+            <span>+91 8527 285 720</span>
+          </a>
+          <div class="cd-item">
+            <div class="cd-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <span>Badarpur, New Delhi, India</span>
+          </div>
+        </div>
+
+        <div class="social-icons">
+          <a href="https://www.facebook.com/sarik.ansari.3975" target="_blank" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.linkedin.com/in/sarik-ansari-9679a7240" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://github.com/Sarikansari" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com/sarik.ansari.3975" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+      </div>
+
+      <div class="contact-right">
+        <form id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cf-name">Your Name</label>
+              <input type="text" id="cf-name" name="from_name" placeholder="Sarik Ansari" required />
+              <span class="field-error" id="err-name"></span>
+            </div>
+            <div class="form-group">
+              <label for="cf-email">Your Email</label>
+              <input type="email" id="cf-email" name="from_email" placeholder="you@example.com" required />
+              <span class="field-error" id="err-email"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cf-subject">Subject</label>
+            <input type="text" id="cf-subject" name="subject" placeholder="Project / Job opportunity / Just saying hi" required />
+            <span class="field-error" id="err-subject"></span>
+          </div>
+          <div class="form-group">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="5" placeholder="Tell me what's on your mind..." required></textarea>
+            <span class="field-error" id="err-message"></span>
+          </div>
+          <button type="submit" class="btn3" id="cf-submit">
+            <span id="cf-btn-text">Send Message</span>
+            <i class="fa-solid fa-paper-plane" id="cf-btn-icon"></i>
+          </button>
+          <span id="msg"></span>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="copyright">
+    <p>All copyrights &copy; reserved 2025, Sarik Ansari's Portfolio</p>
+  </div>
+</div>
+
+</body>
+
+</html>
